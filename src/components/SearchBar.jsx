@@ -94,7 +94,7 @@ export default function SearchBar({ onSearch, loading }) {
           <input
             style={styles.input}
             type="text"
-            placeholder={mode === 'gene' ? 'e.g. BRCA1, TP53, EGFR...' : 'e.g. Breast Cancer, Diabetes...'}
+            placeholder={mode === 'gene' ? 'e.g. BRCA1, TP53, EGFR...' : 'e.g. Alzheimer, Diabetes...'}
             value={query}
             onChange={e => { setQuery(e.target.value); setShowSuggestions(true); }}
             onFocus={() => setShowSuggestions(true)}
